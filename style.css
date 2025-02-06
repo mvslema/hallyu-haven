@@ -1,0 +1,335 @@
+
+/* home page */
+body {
+    font-family: "Arial", sans-serif;
+    background: linear-gradient(to right, #facbcd, #f3dfd9);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background: #ff4d6d;
+    color: white;
+    padding: 25px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+ nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: 0.3s;
+    font-family: 'Poppins', sans-serif; 
+}
+
+nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    text-decoration: underline;
+}
+
+
+
+main {
+    text-align: center;
+    margin: 40px;
+}
+
+.featured {
+    text-align: center;
+    margin: 20px;
+}
+
+.featured img {
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+
+/* reviews section*/
+.review {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.review h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.review p {
+    font-size: 16px;
+    color: #555;
+}
+
+
+@media screen and (max-width: 768px) {
+    nav ul {
+    flex-direction: column;
+    gap: 10px;
+    }
+}
+
+/* Top Dramas Section */
+.top-dramas {
+    width: 90%;
+    max-width: 1000px;
+    margin: 60px auto; /* Adjust for fixed navbar */
+    text-align: center;
+}
+
+.top-dramas h2 {
+    color: #ff4d6d;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.drama-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.kdrama {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: 0.3s;
+}
+
+.kdrama:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.kdrama img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.kdrama h3 {
+    color: #333;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.kdrama p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+    .top-dramas h2 {
+        font-size: 26px;
+    }
+
+    .kdrama h3 {
+        font-size: 20px;
+    }
+
+    .kdrama p {
+        font-size: 14px;
+    }
+}
+
+/* Footer Section */
+footer {
+    background-color: #ff4d6d;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: 16px;
+    margin: 0;
+}
+
+footer a {
+    color: #ff4d6d;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #ff1e4d;
+    text-decoration: underline;
+}
+
+/* Media Query for Footer Responsiveness */
+@media screen and (max-width: 768px) {
+    footer {
+        padding: 15px;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
+}
+
+/* Logo Style */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    margin-right: 20px; /* Adds spacing between logo and menu */
+    margin-left: 20px;
+}
+
+.logo a {
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    color: white  /* Change the color as per your theme */
+}
+
+.logo a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Adjust header content to make room for logo */
+header h1 {
+    text-align: center;
+    margin-top: 0;
+    font-size: 2.5rem;
+}
+
+/* upcoming */
+
+.upcoming h2 {
+    font-size: 28px;
+    color: #ff4d6d;
+    margin-bottom: 20px;
+}
+
+.drama {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+.drama img {
+    width: 180px;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.drama-info {
+    text-align: left;
+}
+
+.drama-info h3 {
+    font-size: 24px;
+    color: #333;
+}
+
+.drama-info p {
+    font-size: 16px;
+    color: #666;
+    margin-top: 5px;
+}
+
+/* Checklist Container */
+.checklist-container {
+    text-align: center;
+    margin: 50px auto;
+    max-width: 500px;
+    padding: 20px;
+    background: linear-gradient(to right, #ff758c, #ff7eb3);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.checklist-container h1 {
+    color: white;
+    font-size: 28px;
+    margin-bottom: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Checklist Style */
+.checklist {
+    list-style: none;
+    padding: 0;
+}
+
+.checklist li {
+    background: white;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: 0.3s;
+}
+
+.checklist li:hover {
+    transform: scale(1.05);
+}
+
+.checklist input[type="checkbox"] {
+    transform: scale(1.2);
+    accent-color: #ff4d6d;
+}
+
+
+
+
+
+
+
+
